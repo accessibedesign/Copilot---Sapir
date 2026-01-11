@@ -1,0 +1,33 @@
+@mixin transition($properties : all 0.15s ease) {
+	transition: $properties;
+}
+
+@mixin changePlaceholder($color: inherit, $fontSize: inherit) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-size: $fontSize;
+
+	}
+
+	&:-moz-placeholder {
+		color: $color;
+		font-size: $fontSize;
+	}
+
+	&::-moz-placeholder {
+		color: $color;
+		font-size: $fontSize;
+	}
+
+	&:-ms-input-placeholder {
+		color: $color;
+		font-size: $fontSize;
+	}
+}
+
+@mixin animation($string) {
+	-webkit-animation: $string;
+	-moz-animation: $string;
+	-o-animation: $string;
+	animation: $string;
+}

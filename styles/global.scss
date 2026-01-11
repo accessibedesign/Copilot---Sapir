@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+// prevents outside styles from affecting widget's UI components styles
+:host {
+  all: initial !important;
+  position: var(--css-position, 'static') !important;
+}
+
+
+// TODO: Remove this code when keyboard navigation is developed in the controller
+// TODO: Consider apply using javascript
+// The variable `--acsb-keynav` is provided from the accesswidget (controller)
+:host :focus,
+:host :focus-visible {
+  outline-offset: calc(var(--acsb-keynav, 0) * 2);
+  outline: #639af9 inset var(--acsb-keynav, 0);
+}
+
+
+[role="switch"],
+[role="button"] {
+  cursor: pointer;
+}
+
+textarea,
+input,
+select {
+  outline: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
