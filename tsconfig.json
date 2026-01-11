@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ],
+      "react": [
+        "./node_modules/preact/compat/"
+      ],
+      "react-dom": [
+        "./node_modules/preact/compat/"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "src/types",
+    "./tests/__mocks__/setupTests.ts"
+  ],
+  "exclude": [
+    "./dist",
+    "src/**/*.spec.ts(x)?"
+  ]
+}

@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/24551488/README.md)
 ## 🎨 accessWidget UI library
 
 accessWidget-UI is a lightweight npm package built using Preact, designed to be simple and easy-to-use. It is tree-shakeable and includes only necessary dependencies to keep the package size small.
